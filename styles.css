@@ -1,0 +1,145 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background-color: rgb(242, 241, 241);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#ImageContainer {
+    position: relative;
+    max-width: 40%;
+    overflow: hidden;
+}
+
+#Image {
+    height: 100%; 
+    width: auto;
+    display: block;
+}
+
+#Overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    color: white;
+    top: 64px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#Logo {
+    z-index: 2;
+    width: auto;
+    height: 80%;
+    margin: 36px;
+}
+
+
+#RightSide {
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    justify-content: center;
+}
+
+#CreateAccountButton {
+    background-color: #596D48;
+    color: azure;
+}
+
+#Form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#DoThis {
+    margin: 16px;
+}
+
+#InputForm {
+    display: grid;
+    gap: 4px;
+    column-gap: 36px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);;
+    place-items: left;
+}
+
+#TopText {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 36px;
+}
+
+#CreateAccountButton {
+    border-radius: 8px;
+    padding: 12px;
+    padding-left: 36px;
+    padding-right: 36px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    transition: 0.3 ease-in-out;
+    cursor: pointer;
+}
+
+#ButtonAndBText {
+    margin: 36px
+}
+
+.InputText {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(69, 66, 66);
+}
+
+input {
+    width: 216px;
+    border: solid 2px rgb(242, 241, 241);
+    border-radius: 4px;
+    height: 28px;
+    box-sizing: border-box;
+}
+
+
+input:focus-visible{
+    border: 2px solid rgb(148, 204, 252);
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.Password:invalid { 
+    border: 2px solid rgb(223, 60, 60);
+    outline: none;   
+}
+
+.LogIn {
+    color: #596D48;
+    font-weight: bold;
+}
+
+#ErrMsg {
+    height: 20px;
+    margin-top: 5px;
+    color: rgb(223, 60, 60);
+    max-width: 216px;
+    font-size: 10px;
+}

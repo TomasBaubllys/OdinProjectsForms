@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="ImageContainer">
+        <img src="sidebar.jpg" id="Image" alt="Sidebar Image">
+        <div id="Overlay">
+            <img src="odin-lined.png" id="Logo" alt="Logo">
+            <p>Odout</p>
+        </div>
+    </div>
+
+    <div id="RightSide">
+        <div>
+            <div id="TopText">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started</p>
+            <p>You <i>know</i> you want to.</p>
+            </div>
+        </div>
+        <div id="Form">
+            <p id="DoThis">Let`s do this!</p>
+            <div id="InputForm">
+                <div class="InputText">
+                    <label>NAME</label><input>
+                </div>
+                <div class="InputText">
+                    <label>LAST NAME</label><input>
+                </div>
+                <div class="InputText">
+                    <label>EMAIL</label><input type="email">
+                </div>
+                <div class="InputText">
+                    <label>PHONE NUMBER</label><input>
+                </div>
+                <div class="InputText">
+                    <label>PASSWORD</label><input class="Password" id="Pass1" type="password">
+                    <div id="ErrMsg"></div>
+                </div>
+                <div class="InputText">
+                    <label>CONFIRM PASSWORD</label><input class="Password" id="Pass2" type="password">
+                </div>
+            </div>
+        </div>
+        <div id="ButtonAndBText">
+            <button id="CreateAccountButton">Create Account</button>
+            <p>Already have an account? <span class="LogIn">Log in</span></p>
+        </div>
+    </div>
+</body>
+</html>
